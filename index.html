@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Redux Intro</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div class="main-flex-container">
+
+
+
+      <div class="main-right">
+        <div id="count-container">
+        </div>
+
+        <div id="buttons">
+          <button type="button" id="button">Click Me</button>
+          <button type="button" id="upvote">upvote +</button>
+          <button type="button" id="downvote">downvote -</button>
+        </div>
+      </div>
+
+      <div id="image-container" class="main-center">
+        <h1>Intro to Redux</h1>
+        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="sun light passing through green leafed tree by Jeremy Bishop">
+      </div>
+
+      <div class="main-right">
+        <form id="new-comment-form" onsubmit="return false;" action="#" method="post">
+          <input id="new-comment-name-input" type="text" name="name" value="" placeholder="your name"><br>
+          <input id="new-comment-content-input" type="text" name="name" value="" placeholder="content"><br>
+          <input type="submit" name="content" value="create comment"><br>
+        </form>
+
+        <div id="comments-div">
+
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

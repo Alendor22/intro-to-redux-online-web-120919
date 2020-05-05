@@ -1,0 +1,31 @@
+* {
+  margin: 3px;
+  padding: 2px;
+}
+
+.main-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border-color: green;
+  padding: 5px;
+  box-shadow: 2px 2px gray;
+}
+
+img {
+  max-height: 400px;
+  max-width: 400px;
+}
