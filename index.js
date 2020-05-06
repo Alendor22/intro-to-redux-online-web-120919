@@ -10,8 +10,7 @@ function createStore(reducer) {
     console.log("dispatch called, before reducer call state is, state is, ", state)
     state = reducer(state, action);
     console.log("dispatch called, after reducer, state is, ", state)
-    // render() is not really Redux, per se... [explain...]
-    // an array of functions live here, which we might call subscribers.. and all the subscribers get called on state changes
+    // render() is not really Redux -- what Redux does is collects an array of functions that rely on the Redux state and calls them when changes are made.  Redux calls these functions 'subscribers'.
     render();
   }
 
@@ -36,6 +35,16 @@ let store = createStore(reducer) // createStore takes the reducer reducer as an 
 store.dispatch({ type: '@@INIT' });
 let button = document.getElementById('button');
 
+button.addEventListener('click', () => {
+  store.dispatch({ type: 'INCREASE_COUNT' });
+});
+
+// Exercise: change this code so that we're adding comments to the Redux store.
+// You can choose to use the Comment function or just steal its render method and tweak it to work here, or just build your own code for it entirely.
+// You'll have to change the default state to add comments to the initial state.
+// Then, you'll have to update the reducer to handle "ADD_COMMENT".
+// Finally, hook the submit listener up and dispatch an action.
+
 function createComment(e) {
   e.preventDefault()
   const name = document.getElementById("new-comment-name-input").value
@@ -44,8 +53,3 @@ function createComment(e) {
 }
 const commentForm = document.getElementById("new-comment-form")
 commentForm.addEventListener("submit", createComment)
-
-
-button.addEventListener('click', () => {
-  store.dispatch({ type: 'INCREASE_COUNT' });
-});
