@@ -57,6 +57,9 @@
 
 Make sure you read through the Redux [docs], they are *awesome*!
 And, check out the [source code], which is full of tremendously helpful explanations and links!!!
+By the way, Redux is written in [TypeScript].  But you can translate any or all of it to JavaScript using [this tool] if you'd like to have a look through the source code.
 
 [docs]:https://redux.js.org/
 [source code]:https://github.com/reduxjs/redux
+[TypeScript]:https://www.typescriptlang.org/
+[this tool]:https://www.typescriptlang.org/play/index.html
