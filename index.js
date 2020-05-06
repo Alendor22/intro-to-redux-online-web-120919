@@ -39,11 +39,19 @@ button.addEventListener('click', () => {
   store.dispatch({ type: 'INCREASE_COUNT' });
 });
 
-// Exercise: change this code so that we're adding comments to the Redux store.
+// Exercises:
+// 1.  Add upvotes and downvotes to the Redux store, and hook up the corresponding buttons.
+
+// 2.  Change this code so that we're adding comments to the Redux store.
 // You can choose to use the Comment function or just steal its render method and tweak it to work here, or just build your own code for it entirely.
 // You'll have to change the default state to add comments to the initial state.
 // Then, you'll have to update the reducer to handle "ADD_COMMENT".
 // Finally, hook the submit listener up and dispatch an action.
+
+// 3. Now, re-organize the code a bit:
+//   - add a store.js file that creates the store
+//   - keep any listeners and DOM manipulation here in index.js
+//   - you'll have to import the store here to use it... can you make it work?
 
 function createComment(e) {
   e.preventDefault()
